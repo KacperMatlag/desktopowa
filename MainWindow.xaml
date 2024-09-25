@@ -1,0 +1,44 @@
+﻿<Window x:Class="desktopowa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:desktopowa"
+        mc:Ignorable="d"
+        Title="MojeDźwięki, Wykonał: Kacper Matlag" Height="450" Width="800"
+        Background="SeaGreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+        <Button Grid.Column="0" Background="Transparent" Width="100">
+            <Image Source="./images/obraz3.png"/>
+        </Button>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <Image Source="./images/obraz.png" Width="150"/>
+                <StackPanel>
+                    <Label x:Name="Title" Foreground="White" FontSize="50" Content="123"/>
+                    <Label x:Name="Album" Foreground="White" FontSize="30" Content="123" FontStyle="Italic"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Label x:Name="Quantity" Foreground="#61D918" Content="123"/>
+                        <Label x:Name="Year" Foreground="#61D918" Content="123" Margin="30,0,0,0"/>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <Label x:Name="Number" Content="123" VerticalAlignment="Center" Foreground="#61D918"/>
+                <Button x:Name="Pobierz" Width="100" Height="30" Background="#61D918" Content="Pobierz" FontSize="20" FontWeight="Bold"/>
+            </StackPanel>
+        </Grid>
+        <Button Grid.Column="2" Background="Transparent" Width="100">
+            <Image Source="./images/obraz2.png"/>
+        </Button>
+    </Grid>
+</Window>
