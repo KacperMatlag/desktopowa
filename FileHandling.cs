@@ -24,7 +24,7 @@ namespace konsola
                     Album = texts[i + 1],
                     SongsNumber = int.Parse(texts[i + 2]),
                     Year = int.Parse(texts[i + 3]),
-                    DownloadTime = int.Parse(texts[i + 4]),
+                    DownloadNumber = int.Parse(texts[i + 4]),
                 });
             }
 
@@ -38,7 +38,7 @@ namespace konsola
                 Console.WriteLine(record.Album);
                 Console.WriteLine(record.SongsNumber.ToString());
                 Console.WriteLine(record.Year.ToString());
-                Console.WriteLine(record.DownloadTime.ToString());
+                Console.WriteLine(record.DownloadNumber.ToString());
                 Console.WriteLine();
             }
         }

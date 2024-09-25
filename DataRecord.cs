@@ -12,6 +12,6 @@ namespace konsola
         public string Album { get; set; }
         public int SongsNumber { get; set; }
         public int Year { get; set; }
-        public int DownloadTime { get; set; }
+        public int DownloadNumber { get; set; }
     }
 }

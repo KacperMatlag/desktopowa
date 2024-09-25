@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:desktopowa"
         mc:Ignorable="d"
-        Title="MojeDźwięki, Wykonał: Kacper Matlag" Height="300" Width="800"
+        Title="MojeDźwięki, Wykonał: Kacper Matlag" Height="300" Width="1300"
         Background="SeaGreen">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -13,7 +13,7 @@
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="200"/>
         </Grid.ColumnDefinitions>
-        <Button Grid.Column="0" Background="Transparent" Width="100" BorderThickness="0" VerticalAlignment="Center">
+        <Button Grid.Column="0" Background="Transparent" Width="100" BorderThickness="0" VerticalAlignment="Center" x:Name="Prev" Click="Prev_Click" Height="70">
             <Image Source="./images/obraz3.png"/>
         </Button>
         <Grid Grid.Column="1">
@@ -27,17 +27,17 @@
                     <Label x:Name="Artist" Foreground="White" FontSize="50" Content="123"/>
                     <Label x:Name="Album" Foreground="White" FontSize="30" Content="123" FontStyle="Italic"/>
                     <StackPanel Orientation="Horizontal">
-                        <Label x:Name="Quantity" Foreground="#61D918" Content="123"/>
-                        <Label x:Name="Year" Foreground="#61D918" Content="123" Margin="30,0,0,0"/>
+                        <Label x:Name="Quantity" Foreground="#61D918" Content="123" FontSize="20"/>
+                        <Label x:Name="Year" Foreground="#61D918" Content="123" Margin="30,0,0,0" FontSize="20"/>
                     </StackPanel>
                 </StackPanel>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,189,0,0" Grid.RowSpan="2" Width="400">
-                <Label x:Name="Number" Content="123" VerticalAlignment="Center" Foreground="#61D918"/>
-                <Button x:Name="Pobierz" Width="100" Height="30" Margin="20,0,0,0" Background="#61D918" Content="Pobierz" FontSize="20" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Grid.Row="1" Width="400" Margin="20,0,0,0">
+                <Label x:Name="DownloadNumber" Content="123" VerticalAlignment="Center" Foreground="#61D918" FontSize="20"/>
+                <Button x:Name="Download" Width="100" Height="30" Margin="20,0,0,0" Background="#61D918" Content="Pobierz" FontSize="20" FontWeight="Bold" Click="Download_Click"/>
             </StackPanel>
         </Grid>
-        <Button Grid.Column="2" Background="Transparent" Width="100" BorderThickness="0" VerticalAlignment="Center">
+        <Button Grid.Column="2" Width="100" BorderThickness="0" VerticalAlignment="Center" x:Name="Next" Click="Next_Click" Height="70" Background="Transparent">
             <Image Source="./images/obraz2.png"/>
         </Button>
     </Grid>
